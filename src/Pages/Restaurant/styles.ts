@@ -1,0 +1,112 @@
+import styled from 'styled-components'
+
+export const Banner = styled.div`
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    `
+
+export const Overlay = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    `
+
+export const BannerText = styled.div`
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    padding:24px;
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+    `
+
+export const Container = styled.div`
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    gap:32px;
+    `
+
+export const FoodList = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+    `
+
+export const FoodCard = styled.div`
+    background-color: #e66767;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+    transition: transform 0.2s ease;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+    `
+
+export const FoodImage = styled.img`
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    `
+
+export const FoodContent = styled.div`
+    padding: 12px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    `
+
+export const FoodTitle = styled.h4`
+    margin: 0 0 8px;
+    padding: 8px;
+    `
+
+export const FoodDescription = styled.p`
+    margin: 0 0 12px;
+    padding:8px;
+    font-size: 13px;
+    color: #fff;
+    `
+
+export const Button = styled.button`
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    color: #e66767;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+
+    &:hover {
+        background-color: #c0bebe;
+    }
+    `
