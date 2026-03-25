@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+EFOOD - Projeto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido como parte do curso Full Stack Python da EBAC, com o objetivo de criar uma aplicação front-end inspirada em um layout do Figma, utilizando React, Styled Components e React Router.
 
-Currently, two official plugins are available:
+🚀 Tecnologias utilizadas
+React
+TypeScript
+Vite
+Styled Components
+React Router DOM
+📸 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O EFOOD é uma aplicação de catálogo de restaurantes, onde o usuário pode:
 
-## React Compiler
+Visualizar uma lista de restaurantes
+Ver detalhes de cada restaurante
+Explorar os pratos disponíveis
+Navegar entre páginas utilizando rotas
+🖥️ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✔️ Listagem de restaurantes
+✔️ Página individual de cada restaurante
+✔️ Exibição de pratos
+✔️ Layout baseado no Figma
+✔️ Navegação entre páginas
+✔️ Estilização com Styled Components
 
-## Expanding the ESLint configuration
+🔗 Acesse o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 Deploy: https://efood-react-rosy.vercel.app/
+👉 Repositório: https://github.com/kaio-oliveira5/efood-react
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+📂 Como rodar o projeto localmente
+# Clonar o repositório
+git clone https://github.com/kaio-oliveira5/efood-react
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Entrar na pasta
+cd efood-react
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Instalar dependências
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Rodar o projeto
+npm run dev
+🎯 Objetivo do projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto foi desenvolvido com foco em:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Prática de React com TypeScript
+Organização de componentes
+Uso de rotas com React Router
+Estilização com Styled Components
+Simulação de um sistema real de delivery
+📌 Observações
+
+Este projeto é apenas para fins educacionais e não possui integração com backend ou sistema de pagamento.
+
+👨‍💻 Autor
+
+Desenvolvido por Kaio Oliveira
+🔗 https://github.com/kaio-oliveira5
