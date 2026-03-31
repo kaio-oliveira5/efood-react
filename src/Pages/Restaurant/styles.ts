@@ -4,9 +4,9 @@ export const Banner = styled.div`
     width: 100%;
     height: 280px;
     background-size: cover;
-    background-position: center;
+    background-position: center ;
+    background-repeat: no-repeat;
     position: relative;
-    
     `
 
 export const Overlay = styled.div`
