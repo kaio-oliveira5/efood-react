@@ -7,7 +7,8 @@ import {
     LinkItem,
     Empty
 } from './styles'
-import Img from '../../assets/logo.png'
+
+import logo from '../../assets/logo.png'
 
 const Header = () => {
     const location = useLocation()
@@ -27,7 +28,7 @@ const Header = () => {
 
                 {/* LOGO CENTRAL */}
                 <Link to="/">
-                    <Logo src={Img} />
+                    <Logo src={logo} alt="efood" />
                 </Link>
 
                 {/* DIREITA */}

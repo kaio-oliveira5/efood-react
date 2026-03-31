@@ -38,14 +38,14 @@ export const Container = styled.div`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 16px;
+    padding: 32px 0;
     gap:32px;
     `
 
 export const FoodList = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 32px;
     margin-top: 24px;
 
     @media (max-width: 768px) {
@@ -59,12 +59,13 @@ export const FoodList = styled.div`
 
 export const FoodCard = styled.div`
     background-color: #e66767;
-    border-radius: 8px;
     overflow: hidden;
     color: #fff;
     transition: transform 0.2s ease;
     display:flex;
     flex-direction: column;
+    min-height: 320px;
+    padding: 8px;
     height: 100%;
 
     &:hover {
@@ -74,7 +75,7 @@ export const FoodCard = styled.div`
 
 export const FoodImage = styled.img`
     width: 100%;
-    height: 160px;
+    height: 140px;
     object-fit: contain;
     `
 
@@ -99,7 +100,9 @@ export const FoodDescription = styled.p`
 
 export const Button = styled.button`
     width: 100%;
-    padding: 8px;
+    padding: 6px ;
+    font-size: 14px;
+    font-weight: bold;
     background-color: #fff;
     color: #e66767;
     border: none;
