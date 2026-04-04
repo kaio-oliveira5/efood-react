@@ -16,9 +16,9 @@ export const Logo = styled.img`
     `
 
 export const Title = styled.h1`
-    font-size: 32px;
+    font-size: 36px;
     color: #e66767;
-    font-weight: bold;
+    font-weight: 900;
 
     max-width: 540px;
     margin: 0 auto;

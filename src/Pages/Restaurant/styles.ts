@@ -16,21 +16,22 @@ export const Overlay = styled.div`
     background-color: rgba(0, 0, 0, 0.6);
     `
 
+
 export const BannerText = styled.div`
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 32px;
+    left: calc((100% - 1024px) / 2);
     color: #fff;
-    padding:24px;
 
     h2 {
         font-size: 32px;
-        margin-bottom: 8px;
+        font-weight: 900;
+        font-style: black;
 
     }
 
     p {
-        font-size: 16px;
+        font-size: 12px;
     }
     `
 
@@ -87,15 +88,19 @@ export const FoodContent = styled.div`
     `
 
 export const FoodTitle = styled.h4`
-    margin: 0 0 8px;
-    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 900;
+    font-style: black;
+    line-height: 100%;
+    color: #FFEBD9;
     `
 
 export const FoodDescription = styled.p`
-    margin: 0 0 12px;
-    padding:8px;
-    font-size: 13px;
-    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFEBD9;
+    line-height: 22px;
     `
 
 export const Button = styled.button`

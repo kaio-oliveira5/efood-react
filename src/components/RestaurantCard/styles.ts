@@ -3,27 +3,38 @@ import { Link } from 'react-router-dom'
 
 export const Card = styled.div`
     border: 1px solid #e66767;
-    border-radius: 8px;
     overflow: hidden;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 398px;
 `
 
 export const Image = styled.img`
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 205px;
+    object-fit: contain;
+    display: block;
+
+    @media (max-width: 480px) {
+        height: 180px;
+    }
 `
 export const Content = styled.div`
-    padding: 16px;
+    padding: 16px 16px 8px;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1;
+
 `
 export const Title = styled.h3`
-    margin: 0 0 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
 `
 export const TitleContainer = styled.div`
     color: #e66767;
@@ -48,9 +59,9 @@ export const Rating = styled.span`
 `
 export const Description = styled.p`
     color: #e66767;
-    margin: 0;
-    font-size: 12px;
-    line-height: 1;4;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
 `
 export const CardLink = styled(Link)`
     text-decoration: none;
@@ -58,15 +69,17 @@ export const CardLink = styled(Link)`
 `
 export const Button = styled.button`
     margin-top: 16px;
-    margin-left: 8px;
     margin-bottom: 8px;
+    align-self: flex-start;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 2px 8px;
     background-color: #e66767;
-    color: #fff;
+    color: #ffebd9;
     border: none;
     cursor: pointer;
-    font-size: 12px;   
+    font-size: 14px;
+    font-weight: 500;
+    height: 24px;   
 `
 export const ImageContainer = styled.div`
     position: relative;

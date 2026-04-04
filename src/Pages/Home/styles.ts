@@ -5,6 +5,16 @@ export const List = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 48px 80px;
     margin-top: 80px;
+
+    @media (max-width: 768px) {
+    gap: 32px;
+    }
+
+    @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 40px;
+    }
 `
 
 export const Container = styled.div`
