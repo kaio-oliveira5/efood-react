@@ -7,6 +7,14 @@ export const Banner = styled.div`
     background-position: center ;
     background-repeat: no-repeat;
     position: relative;
+
+    @media (max-width: 768px) {
+        height: 220px;
+    }
+
+    @media (max-width: 480px) {
+        height: 180px;
+    }
     `
 
 export const Overlay = styled.div`
@@ -32,6 +40,34 @@ export const BannerText = styled.div`
 
     p {
         font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+        left: 16px;
+        bottom: 24px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        left: 12px;
+        bottom: 16px;
+
+        h2 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
     `
 
