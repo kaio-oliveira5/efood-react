@@ -13,8 +13,8 @@ export const Card = styled.div`
 
 export const Image = styled.img`
     width: 100%;
-    height: 205px;
-    object-fit: contain;
+    height: 217px;
+    object-fit: cover;
     display: block;
 
     @media (max-width: 480px) {
@@ -22,19 +22,22 @@ export const Image = styled.img`
     }
 `
 export const Content = styled.div`
-    padding: 16px 16px 8px;
+    
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1;
-
+    position: relative;
+    color: rgb(230, 103, 103);
+    background-color: rgb(255, 255, 255);
+    padding: 8px 8px 16px;
+    height: 100%;
 `
 export const Title = styled.h3`
-    margin-top: 8px;
-    margin-bottom: 16px;
+    display: flex;
     font-size: 18px;
-    font-weight: bold;
-    line-height: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+
 `
 export const TitleContainer = styled.div`
     color: #e66767;
@@ -42,18 +45,22 @@ export const TitleContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%
+    
 `
 export const Rating = styled.span`
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
     color: #e66767;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
+    padding: 8px 8px 16px;
+
 
     svg {
     color: #ffb930;
-    font-size: 16px;
+    font-size: 22px;
     transform: translateY(-2px);
     }
 `
@@ -62,6 +69,8 @@ export const Description = styled.p`
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    height: 100%;
+
 `
 export const CardLink = styled(Link)`
     text-decoration: none;
@@ -69,17 +78,16 @@ export const CardLink = styled(Link)`
 `
 export const Button = styled.button`
     margin-top: 16px;
-    margin-bottom: 8px;
+
     align-self: flex-start;
-    display: inline-block;
-    padding: 2px 8px;
+    display: inline;
+    padding: 6px 4px;
     background-color: #e66767;
     color: #ffebd9;
     border: none;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 500;
-    height: 24px;   
+
 `
 export const ImageContainer = styled.div`
     position: relative;

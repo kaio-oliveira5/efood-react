@@ -1,10 +1,13 @@
+import Frasca from '../assets/Frasca.png'
+import madre from '../assets/la madre.png'
+
 
 const restaurants = [
     {
         id: 1,
         title: 'Frasca Pizzeria Napoletana',
         description: 'Na Frasca Pizzeria, honramos a tradição das pizzas napolitanas: massa de longa fermentação, bordas aeradas e ingredientes selecionados. Unimos um ambiente acolhedor ao sabor autêntico da Itália para criar momentos inesquecíveis.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--8boJ9KmOb54nvamYeYzUv0Pp5wprKN2FA&s',
+        image: Frasca,
         rating: 5,
         category: "Italiana",
         highlight: true
@@ -40,7 +43,7 @@ const restaurants = [
         id: 5,
         title: 'La Madre Cocina Mexicana',
         description: 'Localizado na vibrante região da Serra Gaúcha, o La Madre Bar y Cocina Mexicana une o melhor da gastronomia latina a uma coquetelaria autoral. Com um ambiente cheio de personalidade e pratos que respeitam a tradição mexicana.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ4BOCzYmwcPYlcMn9d_iw8O-45ZYSpf29YQ&s',
+        image: madre,
         rating: 4,
         category: 'Mexicana',
         highlight: false

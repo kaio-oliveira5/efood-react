@@ -6,9 +6,11 @@ const Hero = () => (
         <Logo src={logo} alt="efood" />
 
         <Title>
-            Viva experiências gastronômicas no conforto da sua casa
+            Viva experiências gastronômicas
+            <br />
+            no conforto da sua casa
         </Title>
-    </HeroContainer>
+    </HeroContainer >
 )
 
 export default Hero

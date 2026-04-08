@@ -3,9 +3,11 @@ import styled from 'styled-components'
 export const Banner = styled.div`
     width: 100%;
     height: 280px;
-    background-size: cover;
-    background-position: center ;
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 248, 242);
     position: relative;
 
     @media (max-width: 768px) {
@@ -34,12 +36,15 @@ export const BannerText = styled.div`
     h2 {
         font-size: 32px;
         font-weight: 900;
-        font-style: black;
 
     }
 
+
     p {
-        font-size: 12px;
+        font-size: 32px;
+        font-weight: 100;
+        color: #FFFFFF;
+        margin-bottom: 156px;
     }
 
     @media (max-width: 768px) {
@@ -95,15 +100,14 @@ export const FoodList = styled.div`
     `
 
 export const FoodCard = styled.div`
-    background-color: #e66767;
-    overflow: hidden;
-    color: #fff;
-    transition: transform 0.2s ease;
-    display:flex;
-    flex-direction: column;
-    min-height: 320px;
+    max-width: 304px;
+    width: 100%;
+    color: rgb(255, 248, 242);
+    background-color: rgb(230, 103, 103);
     padding: 8px;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
         transform: scale(1.02);
@@ -111,44 +115,36 @@ export const FoodCard = styled.div`
     `
 
 export const FoodImage = styled.img`
+    max-width: 304px;
+    max-height: 167px;
     width: 100%;
-    height: 140px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     `
 
-export const FoodContent = styled.div`
-    padding: 12px;
-    display:flex;
-    flex-direction:column;
-    flex:1;
-    `
 
 export const FoodTitle = styled.h4`
-    margin-bottom: 8px;
     font-size: 16px;
     font-weight: 900;
-    font-style: black;
-    line-height: 100%;
-    color: #FFEBD9;
+    margin:8px 0;
     `
 
 export const FoodDescription = styled.p`
     font-weight: 400;
     font-size: 14px;
-    color: #FFEBD9;
-    line-height: 22px;
     `
+
 
 export const Button = styled.button`
     width: 100%;
-    padding: 6px ;
     font-size: 14px;
     font-weight: bold;
-    background-color: #fff;
-    color: #e66767;
+    padding: 4px 0;
+    background-color: rgb(255, 248, 242);
+    color: rgb(230, 103, 103);
     border: none;
     cursor: pointer;
-    margin-top: auto;
+    margin-top: 8px;
 
     &:hover {
         background-color: #c0bebe;
