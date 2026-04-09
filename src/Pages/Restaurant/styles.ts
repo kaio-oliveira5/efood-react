@@ -10,7 +10,7 @@ export const Banner = styled.div`
     color: rgb(255, 248, 242);
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         height: 220px;
     }
 
@@ -95,17 +95,19 @@ export const FoodList = styled.div`
     gap: 32px;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 26px;
+        gap: 32px;
     }
 
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
+        padding: 0 20px;
     }
     `
 
 export const FoodCard = styled.div`
-    max-width: 304px;
     width: 100%;
     color: #FFEBD9;
     background-color: #E66767;
