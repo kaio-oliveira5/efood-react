@@ -23,15 +23,21 @@ export const Overlay = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     `
 
 
 export const BannerText = styled.div`
-    position: absolute;
-    bottom: 32px;
-    left: calc((100% - 1024px) / 2);
-    color: #fff;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 0;
+    position: relative;
+    z-index: 1;
 
     h2 {
         font-size: 32px;
@@ -44,12 +50,11 @@ export const BannerText = styled.div`
         font-size: 32px;
         font-weight: 100;
         color: #FFFFFF;
-        margin-bottom: 156px;
+        margin-bottom: 0;
     }
 
     @media (max-width: 768px) {
-        left: 16px;
-        bottom: 24px;
+        padding: 24px 16px;
 
         h2 {
             font-size: 24px;
@@ -115,10 +120,9 @@ export const FoodCard = styled.div`
     `
 
 export const FoodImage = styled.img`
-    max-width: 304px;
-    max-height: 167px;
     width: 100%;
-    height: 100%;
+    height: 167px;
+    display: block;
     object-fit: cover;
     `
 
@@ -132,21 +136,24 @@ export const FoodTitle = styled.h4`
 export const FoodDescription = styled.p`
     font-weight: 400;
     font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    color: #FFEBD9;
     `
 
 
 export const Button = styled.button`
     width: 100%;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 4px 0;
-    background-color: rgb(255, 248, 242);
-    color: rgb(230, 103, 103);
+    background-color: #FFEBD9;
+    color: #E66767;
     border: none;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: auto;
 
     &:hover {
-        background-color: #c0bebe;
+        opacity: 0.8;
     }
     `

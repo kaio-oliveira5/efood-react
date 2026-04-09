@@ -1,4 +1,4 @@
-import { Card, Image, Content, Title, Description, CardLink, Button, Rating, TitleContainer, ImageContainer, Category, Badge } from './styles'
+import { Card, Image, Content, Title, Description, CardLink, Button, Rating, TitleContainer, Category, Badge, ImageContainer } from './styles'
 import { FaStar } from 'react-icons/fa'
 
 type Props = {
@@ -16,14 +16,11 @@ const RestaurantCard = ({ title, description, image, id, rating, category, highl
         <Card>
             <ImageContainer>
                 <Image src={image} alt={title} />
-
-
                 <Category>
                     {highlight && <Badge>Destaque da semana</Badge>}
                     <Badge>{category}</Badge>
                 </Category>
             </ImageContainer>
-
             <Content>
                 <TitleContainer>
                     <Title>{title}</Title>
