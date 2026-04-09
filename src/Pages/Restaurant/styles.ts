@@ -85,7 +85,7 @@ export const Container = styled.div`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 32px 0;
+    padding: 56px 0;
     gap:32px;
     `
 
@@ -93,7 +93,7 @@ export const FoodList = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: 24px;
+
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
@@ -107,8 +107,8 @@ export const FoodList = styled.div`
 export const FoodCard = styled.div`
     max-width: 304px;
     width: 100%;
-    color: rgb(255, 248, 242);
-    background-color: rgb(230, 103, 103);
+    color: #FFEBD9;
+    background-color: #E66767;
     padding: 8px;
     display: flex;
     flex-direction: column;

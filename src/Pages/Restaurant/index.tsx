@@ -297,7 +297,6 @@ const Restaurant = () => {
             </Banner>
 
             <Container>
-                <h2>Pratos</h2>
 
                 <FoodList>
                     {restaurant.foods.map((food) => (
