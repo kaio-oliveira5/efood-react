@@ -9,6 +9,7 @@ export const Banner = styled.div`
     background-size: cover;
     color: rgb(255, 248, 242);
     position: relative;
+    background-position: center center;
 
     @media (max-width: 1024px) {
         height: 220px;
@@ -24,7 +25,118 @@ export const Overlay = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    
     `
+
+export const OverlayModal = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 1000;
+
+    
+    `
+
+export const ModalContainer = styled.div`
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    // display:flex;
+    gap: 24px;
+    transform: translate(-50%, -50%);
+
+    // background-color: #e66767;
+    // color: #fff;
+
+width: 1024px;
+padding: 32px;
+display:flex; 
+color: rgb(255, 248, 242);
+background-color: rgb(230, 103, 103);
+
+    // width: 1024px;
+    // height: 344px;
+    // max-width: 90%;
+    // padding: 24px;
+    
+
+    z-index: 1001;
+
+    @media (max-width: 768px) {
+    width: 100%;
+    // flex-direction: column;
+    padding: 16px;
+    }
+
+    @media (max-width: 425px) {
+    width: 95%;
+    flex-direction: column;
+    padding: 16px;
+    }
+
+    
+    
+`
+export const ModalImage = styled.img`
+width:280px;
+height:280px;
+object-fit: cover;
+
+@media (max-width: 768px) {
+    width: 50%;
+    }
+
+    @media (max-width: 425px) {
+    width: 100%;
+    padding: 16px;
+
+    }
+`
+export const ModalContent = styled.div`
+flex:1;
+
+h2 {
+    font-size: 18px;
+    font-weight: 900;
+    linne-heigth: 100%;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    font-style: black;
+}
+
+p{
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 16px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+img{
+position: absolute;
+top: 0;
+right: 0;
+padding: 8px;
+cursor: pointer;
+}
+
+button{
+    background-color: #FFEBD9;
+    color: #E66767;
+    border-width: medium;
+    border-style: none;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+    line-height: 100%;
+}
+`
 
 
 export const BannerText = styled.div`
@@ -125,7 +237,7 @@ export const FoodImage = styled.img`
     width: 100%;
     height: 167px;
     display: block;
-    object-fit: cover;
+    padding-bottom: 8px;
     `
 
 

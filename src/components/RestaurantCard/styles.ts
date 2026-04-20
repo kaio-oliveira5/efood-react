@@ -28,6 +28,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+    flex: 1;
     color: #E66767;
     background-color: #FFFFFF;
 `
@@ -39,7 +40,7 @@ export const Title = styled.h3`
     align-items: center;
     padding: 0 8px;
     margin-top: 8px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
     width: 100%;
 `
 export const TitleContainer = styled.div`
@@ -48,7 +49,7 @@ export const TitleContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
+
 `
 export const Rating = styled.span`
     font-size: 18px;

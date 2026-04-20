@@ -1,60 +1,57 @@
-import Frasca from '../assets/Frasca.png'
-import madre from '../assets/la madre.png'
-
 
 const restaurants = [
     {
         id: 1,
-        title: 'Frasca Pizzeria Napoletana',
-        description: 'Na Frasca Pizzeria, honramos a tradição das pizzas napolitanas: massa de longa fermentação, bordas aeradas e ingredientes selecionados. Unimos um ambiente acolhedor ao sabor autêntico da Itália para criar momentos inesquecíveis.',
-        image: Frasca,
-        rating: 5,
+        title: "Bella Tavola Italiana",
+        description: "A paixão dos nossos talentosos chefs pela cozinha italiana é evidente em cada prato, desde massas caseiras e risotos cremosos até suculentos frutos do mar e carnes tenras. Nosso menu é complementado por uma excelente carta de vinhos, cuidadosamente selecionados para harmonizar com a riqueza dos sabores italianos.",
+        image: "https://api-ebac.vercel.app/efood/bella_tavola_italiana//capa.jpeg",
+        rating: 4.7,
         category: "Italiana",
         highlight: true
     },
     {
         id: 2,
-        title: 'Yōsai Culinária Oriental',
-        description: 'No Yosai, a tradição milenar encontra a criatividade contemporânea. Com ingredientes rigorosamente selecionados e técnicas precisas, transformamos o frescor dos insumos em uma experiência sensorial completa.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8InSQhK542N_gFJG6wCAkBEyIcGTr2FgOQw&s',
-        rating: 4.5,
-        category: "Japonesa",
+        title: 'Casa das Delícias Árabes',
+        description: "A Casa das Delícias Árabes é um acolhedor e autêntico restaurante árabe, localizado no coração da cidade, que proporciona uma verdadeira experiência culinária do Oriente Médio. O ambiente é decorado com elementos tradicionais e exóticos, criando uma atmosfera convidativa e confortável.",
+        image: "https://api-ebac.vercel.app/efood/casa_delicias_arabes//capa.jpeg",
+        rating: 4.8,
+        category: "árabe",
         highlight: false
     },
     {
         id: 3,
-        title: 'Garden Burgers e Restaurante',
-        description: 'No Garden Burger, a estrela é o fogo e o frescor. Com blends de carnes selecionadas, pães artesanais e combinações autorais, entregamos o verdadeiro hambúrguer feito na hora. O lugar ideal para quem não abre mão de qualidade e sabor intenso.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhlKTfP2wS0G24tRQorjH7VQiH9jHrf-L26A&s',
-        rating: 4.3,
-        category: 'Hamburguer',
+        title: "Sakura Sushi House",
+        description: "A Sakura Sushi House é um sofisticado e autêntico restaurante japonês que oferece uma experiência culinária imersiva, transportando os visitantes diretamente para a Terra do Sol Nascente. O ambiente elegante é complementado por um belo jardim japonês, criando uma atmosfera tranquila e serena.",
+        image: "https://api-ebac.vercel.app/efood/sakura_sushi_house//capa.jpeg",
+        rating: 4.9,
+        category: 'japonês',
         highlight: false
     },
     {
         id: 4,
-        title: "Trattoria D'Ana",
-        description: "Inspirada nas clássicas cozinhas da Itália, a Trattoria d'Ana celebra o prazer de comer bem. Com massas artesanais, molhos preparados com tempo e carinho, e receitas que atravessam gerações, nossa casa é o lugar onde cada refeição conta uma história.",
-        image: 'https://tcheofertas.s3.sa-east-1.amazonaws.com/upload/team/webp/2024/06/20240627095556.webp',
-        rating: 5,
-        category: "Italiana",
+        title: "Cantinho Lusitano",
+        description: "O Cantinho Lusitano é um charmoso e tradicional restaurante português, que celebra a rica herança culinária de Portugal. Neste aconchegante espaço, os visitantes podem desfrutar dos autênticos sabores portugueses, preparados com ingredientes frescos e de alta qualidade, respeitando as receitas clássicas.",
+        image: "https://api-ebac.vercel.app/efood/cantinho_lusitano//capa.jpeg",
+        rating: 4.8,
+        category: "português",
         highlight: false
     },
     {
         id: 5,
-        title: 'La Madre Cocina Mexicana',
-        description: 'Localizado na vibrante região da Serra Gaúcha, o La Madre Bar y Cocina Mexicana une o melhor da gastronomia latina a uma coquetelaria autoral. Com um ambiente cheio de personalidade e pratos que respeitam a tradição mexicana.',
-        image: madre,
-        rating: 4,
-        category: 'Mexicana',
+        title: "Piazza del Forno",
+        description: "A Piazza del Forno é uma pizzaria acolhedora e autêntica que se orgulha de suas raízes italianas. Aqui, você encontrará pizzas artesanais preparadas com ingredientes frescos e assadas em forno a lenha, proporcionando sabores inigualáveis e uma crosta crocante e deliciosa.",
+        image: "https://api-ebac.vercel.app/efood/piazza//capa.png",
+        rating: 4.7,
+        category: 'pizzaria',
         highlight: false
     },
     {
         id: 6,
-        title: 'Buttellinho Restaurante',
-        description: 'O Buttellinho Restaurante é sinônimo de excelência e hospitalidade. Unindo um buffet diversificado com o melhor da culinária regional e carnes selecionadas na brasa, oferecemos uma experiência gastronômica completa que celebra o prazer de comer bem.',
-        image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c9/d7/90/arte-in-tavola-restaurante.jpg?w=400&h=300&s=1',
-        rating: 5,
-        category: 'Italiana',
+        title: "Jardim da Terra",
+        description: "O Jardim da Terra é um restaurante vegano que se dedica a oferecer pratos deliciosos e criativos, utilizando apenas ingredientes frescos, orgânicos e sazonais. Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência culinária única, que celebra a diversidade e a riqueza dos alimentos à base de plantas.",
+        image: "https://api-ebac.vercel.app/efood/jardim_terra//capa.png",
+        rating: 4.8,
+        category: 'vegano',
         highlight: false
     }
 ]

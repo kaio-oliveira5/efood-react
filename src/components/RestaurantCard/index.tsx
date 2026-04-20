@@ -26,11 +26,11 @@ const RestaurantCard = ({ title, description, image, id, rating, category, highl
                     <Title>{title}</Title>
                     <Rating> {rating} <FaStar /> </Rating>
                 </TitleContainer>
-
                 <Description>{description}</Description>
                 <CardLink to={`/restaurant/${id}`}>
                     <Button>Saiba mais</Button>
                 </CardLink>
+
             </Content>
         </Card>
     )
