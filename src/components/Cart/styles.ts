@@ -21,14 +21,16 @@ export const CartContainer = styled.aside`
     /* padding: 16px; */
     display: flex;
     flex-direction: column;
-
-    /* @media (max-width: 760px) {
-        width: 100%;
-    } */
     
-    /* @media (max-width: 1024px) {
-        width: 50%;
-    } */
+    @media (max-width: 1024px) {
+        max-width: 50%;
+    }
+
+@media (max-width: 768px) {
+    max-width: 95%;
+    padding: 16px;
+}
+
     `
 
 export const CartItem = styled.div`
@@ -40,22 +42,21 @@ export const CartItem = styled.div`
     padding: 8px;
     
     position: relative;
-    margin-top: 16px;
     margin-left: 8px;
 
-    /* @media (max-width: 768px) {
-        padding: 8px;
-        gap: 8px;
-        width: 95%;
-    } */
+    @media (max-width: 768px) {
+    padding: 8px;
+    gap: 8px;
+    width: 95%;
+  }
     `
 
 export const CartDiv = styled.div`
 display: flex;
 flex-direction: column;
 gap: 16px;
-margin-top: 16px;
 margin-bottom: 40px;
+padding-top: 32px;
 `
 
 export const ItemImage = styled.img`
@@ -63,10 +64,6 @@ export const ItemImage = styled.img`
     height: 80px;
     object-fit: cover;
 
-    /* @media (max-width: 768px) {
-        width: 60px;
-        height: 60px;
-    } */
     `
 
 export const ItemInfo = styled.div`
@@ -79,6 +76,10 @@ export const ItemInfo = styled.div`
         line-height: 100%;
         font-size: 18px;
         color: #E66767;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+    }
     }
 
     p {
@@ -88,6 +89,10 @@ export const ItemInfo = styled.div`
         line-height: 22px;
         color: #E66767;
         margin-top: 16px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+    }
     }
 
     span {
@@ -95,6 +100,10 @@ export const ItemInfo = styled.div`
         font-size: 12px;
         line-height: 22px;
         color: #E66767; 
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+  }
 
     }
     `
@@ -131,6 +140,11 @@ export const CheckoutButton = styled.button`
     font-weight: bold;
     margin: 16px 8px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        padding: 4px 10px;
+        font-size: 14px;
+  }
     `
 
 export const QuantityContainer = styled.div`
