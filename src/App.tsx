@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Restaurant from './Pages/Restaurant'
 import Footer from './components/Footer'
 import GlobalStyle from './styles'
+import Cart from './components/Cart'
 
 const AppContent = () => {
   const location = useLocation()
@@ -11,7 +12,7 @@ const AppContent = () => {
   return (
     <>
       <GlobalStyle />
-
+      <Cart />
       {/* ❌ NÃO mostra header na home */}
       {location.pathname !== '/' && <Header />}
 
