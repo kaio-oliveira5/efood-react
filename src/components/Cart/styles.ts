@@ -10,53 +10,59 @@ export const Overlay = styled.div`
     z-index: 998;
     `
 
-export const CartContainer = styled.aside`
-    position: fixed;
+export const CartContainer = styled.aside`    
+    position: fixed; 
     top: 0;
     right: 0;
-    width: 360px;
+    width: 90%; /* mobile */
     height: 100%;
     background: #e66767;
     z-index: 999;
-    /* padding: 16px; */
     display: flex;
     flex-direction: column;
-    
-    @media (max-width: 1024px) {
-        max-width: 50%;
+    overflow: hidden;
+
+    /* tablet */
+    @media (min-width: 768px) {
+        width: 50%;
     }
 
-@media (max-width: 768px) {
-    max-width: 95%;
-    padding: 16px;
-}
+    /* desktop */
+    @media (min-width: 1024px) {
+        width: 360px;
+    }
 
     `
 
 export const CartItem = styled.div`
     display: flex;
     gap: 12px;
-    width: 344px;
+    width: 100%;
+    max-width: 344px;
     height: 100px;
     background: #ffe5d9;
     padding: 8px;
+    align-items: center;
     
     position: relative;
-    margin-left: 8px;
-
-    @media (max-width: 768px) {
-    padding: 8px;
-    gap: 8px;
-    width: 95%;
-  }
     `
 
 export const CartDiv = styled.div`
 display: flex;
 flex-direction: column;
 gap: 16px;
-margin-bottom: 40px;
-padding-top: 32px;
+padding: 32px 8px  40px;
+
+overflow-y: auto ;
+
+&::-webkit-scrollbar {
+    width: 5px;
+}
+
+&::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+}
 `
 
 export const ItemImage = styled.img`
@@ -69,6 +75,9 @@ export const ItemImage = styled.img`
 export const ItemInfo = styled.div`
     flex: 1;
     color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     h4 {
         margin: 0;
@@ -103,14 +112,13 @@ export const ItemInfo = styled.div`
 
         @media (max-width: 768px) {
             font-size: 12px;
-  }
+}
 
     }
     `
 
 export const RemoveButton = styled.button`
     position: absolute;
-    margin-top: 76px;
     bottom: 8px;
     right: 8px;
     border: none;
@@ -144,7 +152,7 @@ export const CheckoutButton = styled.button`
     @media (max-width: 768px) {
         padding: 4px 10px;
         font-size: 14px;
-  }
+}
     `
 
 export const QuantityContainer = styled.div`
@@ -152,16 +160,19 @@ export const QuantityContainer = styled.div`
     align-items: center;
     gap: 8px;
     margin-top: 8px;
+
+    min-width: 70px;
     `
 
 export const QuantityButton = styled.button`
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
     border: none;
     background: transparent;
     color: #e66767;
     font-weight: bold;
     cursor: pointer;
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;

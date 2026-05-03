@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useSelector, useDispatch } from 'react-redux'
 import {
     Overlay,
@@ -25,6 +26,7 @@ const Cart = () => {
 
     // 🔥 se estiver fechado, não renderiza nada
     if (!isOpen) return null
+
 
     const total = items.reduce((acc: number, item: any) => {
         return acc + item.preco * item.quantity
