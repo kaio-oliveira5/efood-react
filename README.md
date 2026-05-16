@@ -1,14 +1,6 @@
 # 🍔 EFOOD React
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
-
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge\&logo=redux\&logoColor=white)
-
-![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge\&logo=styled-components\&logoColor=white)
-
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge\&logo=redux\&logoColor=white) ![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge\&logo=styled-components\&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 
 Aplicação web de delivery desenvolvida com React, TypeScript e Redux Toolkit, simulando uma plataforma moderna de pedidos online.
 
