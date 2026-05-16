@@ -22,6 +22,22 @@ export const CartContainer = styled.aside`
     flex-direction: column;
     overflow: hidden;
 
+    .delivery {
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFEBD9;
+        margin-top: 32px;
+        margin-left: 8px;
+    }
+
+    .payment{
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFEBD9;
+        margin-top: 32px;
+        margin-left: 8px;
+    }
+
     /* tablet */
     @media (min-width: 768px) {
         width: 50%;
@@ -38,7 +54,7 @@ export const CartItem = styled.div`
     display: flex;
     gap: 12px;
     width: 100%;
-    max-width: 344px;
+    /* max-width: 344px; */
     height: 100px;
     background: #ffe5d9;
     padding: 8px;
@@ -113,9 +129,129 @@ export const ItemInfo = styled.div`
         @media (max-width: 768px) {
             font-size: 12px;
 }
-
     }
     `
+
+export const FormContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 8px;
+`
+
+export const InputGroup = styled.div<{ $error?: boolean }>`
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 14px;
+        font-weight: 700;
+        color: #FFEBD9;
+        margin-bottom: 8px;
+    }
+
+    input {
+        height: 32px;
+        width: 100%;
+        box-sizing: border-box;
+
+        border: ${({ $error }) =>
+        $error ? '2px solid red' : '2px solid transparent'};
+
+        padding: 0 8px;
+        background: #FFEBD9;
+        color: #4b4b4b;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+        color: #e66767 ;
+            font-size: 12px;
+        }
+    }
+`
+
+export const Row = styled.div`
+    display: flex;
+    
+    gap: 8px;
+
+    div {
+        flex: 1;
+    }
+`
+
+
+export const PaymentContainer = styled.div`
+    padding: 0 8px;
+    /* max-width: 360px; */
+
+
+`
+
+export const PaymentTitle = styled.h2`
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFEBD9;
+    margin-top: 32px;
+    margin-bottom: 16px;
+`
+
+export const PaymentForm = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+`
+
+
+export const PaymentGroup = styled.div<{ $error?: boolean }>`
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 14px;
+        font-weight: 700;
+        color: #FFEBD9;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        height: 32px;
+
+        border: ${({ $error }) =>
+        $error ? '2px solid red' : '2px solid transparent'};
+
+        background: #FFEBD9;
+        padding: 0 8px;
+        color: #4b4b4b;
+        font-size: 14px;
+        box-sizing: border-box;
+
+        
+        &:focus {
+            outline: none;
+        }
+        
+        &::placeholder {
+        color: #e66767 ;
+            font-size: 12px;
+        }
+    }
+`
+
+export const PaymentRow = styled.div`
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+
+    > div {
+        flex: 1;
+    }
+`
 
 export const RemoveButton = styled.button`
     position: absolute;
@@ -140,6 +276,68 @@ export const TotalContainer = styled.div`
     
     `
 
+export const DeliveryButton = styled.button`
+    font-size: 14px;
+    padding: 4px 16px;
+    background: #fff;
+    color: #e66767;
+    border: none;
+    font-weight: 700;
+    margin: 0 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        opacity: 0.9;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    `
+
+export const ButtonFinish = styled.button`
+    font-size: 14px;
+    padding: 4px 16px;
+    background: #fff;
+    color: #e66767;
+    border: none;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        opacity: 0.9;
+    }
+
+    &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+    `
+
+export const BackButton = styled.button`
+    font-size: 14px;
+    padding: 4px 16px;
+    background: #fff;
+    color: #e66767;
+    border: none;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        opacity: 0.9;
+    }
+    `
+
 export const CheckoutButton = styled.button`
     padding: 4px 16px;
     background: #fff;
@@ -148,6 +346,11 @@ export const CheckoutButton = styled.button`
     font-weight: bold;
     margin: 16px 8px;
     cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        opacity: 0.9;
+    }
 
     @media (max-width: 768px) {
         padding: 4px 10px;
@@ -177,9 +380,10 @@ export const QuantityButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s ease;
 
     &:hover {
-        background: #b3b3b3;
+        background: rgba(0, 0, 0, 0.1);;
     }
     `
 
