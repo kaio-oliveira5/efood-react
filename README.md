@@ -1,6 +1,11 @@
 
 # 🍔 EFOOD React
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
+
 Aplicação web de delivery desenvolvida com React, TypeScript e Redux Toolkit, simulando uma plataforma moderna de pedidos online.
 
 O projeto permite visualizar restaurantes, acessar cardápios individuais, adicionar produtos ao carrinho e concluir pedidos através de um checkout completo com validações, integração com API e experiência responsiva para desktop e dispositivos móveis.
@@ -15,7 +20,9 @@ O projeto permite visualizar restaurantes, acessar cardápios individuais, adici
 
 ## 📸 Preview
 
-<img width="100%" src="./preview.png" alt="Preview do projeto EFOOD React" />
+<p align="center">
+  <img src="./preview.png" alt="Preview do projeto EFOOD React" />
+</p>
 
 ---
 
@@ -100,6 +107,7 @@ npm install
 Execute a aplicação:
 
 npm run dev
+
 📌 Status do projeto
 
 ✅ Projeto finalizado
