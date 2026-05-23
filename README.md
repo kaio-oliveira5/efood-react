@@ -1,5 +1,4 @@
-
-# 🍔 EFOOD React
+# EFOOD React
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
@@ -10,23 +9,19 @@ Aplicação web de delivery desenvolvida com React, TypeScript e Redux Toolkit, 
 
 O projeto permite visualizar restaurantes, acessar cardápios individuais, adicionar produtos ao carrinho e concluir pedidos através de um checkout completo com validações, integração com API e experiência responsiva para desktop e dispositivos móveis.
 
----
 
-## 🚀 Deploy
+## **Deploy**
 
-🔗 https://efood-react-rosy.vercel.app/
+https://efood-react-rosy.vercel.app/
 
----
 
-## 📸 Preview
+## **Preview**
 
 <p align="center">
   <img src="./preview.png" alt="Preview do projeto EFOOD React" />
 </p>
 
----
-
-## ✨ Funcionalidades
+## **Funcionalidades**
 
 - Listagem dinâmica de restaurantes
 - Página individual para cada restaurante
@@ -45,9 +40,8 @@ O projeto permite visualizar restaurantes, acessar cardápios individuais, adici
 - Hover effects e transições suaves
 - Experiência de usuário otimizada (UX)
 
----
 
-## 🛠️ Tecnologias utilizadas
+## **Tecnologias utilizadas**
 
 <div style="display: inline_block"><br/>
 
@@ -60,7 +54,7 @@ O projeto permite visualizar restaurantes, acessar cardápios individuais, adici
 
 </div>
 
-### Stack utilizada
+### **Stack utilizada**
 
 - React
 - TypeScript
@@ -71,9 +65,8 @@ O projeto permite visualizar restaurantes, acessar cardápios individuais, adici
 - Vite
 - ESLint
 
----
 
-## 📚 Aprendizados
+## **Aprendizados**
 
 Durante o desenvolvimento deste projeto foram aplicados conceitos importantes de desenvolvimento Front-end moderno, incluindo:
 
@@ -87,37 +80,46 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos importantes de
 - Boas práticas com React e TypeScript
 - Experiência do usuário (UX/UI)
 
----
 
-## ⚙️ Como executar o projeto
+## **Como executar o projeto**
 
 Clone o repositório:
 
 ```bash
 git clone https://github.com/kaio-oliveira5/efood-react.git
+```
 
 Acesse a pasta do projeto:
 
+```bash
 cd efood-react
+```
 
 Instale as dependências:
 
+```bash
 npm install
+```
 
 Execute a aplicação:
 
+```bash
 npm run dev
+```
 
-📌 Status do projeto
 
-✅ Projeto finalizado
 
-👨‍💻 Autor
+## **Status do projeto**
+
+Projeto finalizado
+
+
+## **Autor**
 
 Desenvolvido por Kaio Oliveira
 
-🔗 GitHub:
+GitHub:
 https://github.com/kaio-oliveira5
 
-🔗 LinkedIn:
+LinkedIn:
 https://www.linkedin.com/in/kaio-oliveira-683698362
